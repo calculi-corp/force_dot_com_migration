@@ -5,7 +5,6 @@
 	"application": {
 		"name": "force_migration_tool",
 		"language": "SFDC",
-		"scm": {},
 		"artifact_store": {
 			"type": "s3",
 			"repositories": [
@@ -29,6 +28,14 @@
 			{
 				"name": "Build",
 				"segment_type": "build",
+				"job_steps": [
+					{
+						"name": "run tests",
+						"definition": "run tests",
+						"command": "ant test",
+						"properties": null
+					}
+				],
 				"exit_actions": {
 					"default": {
 						"fetch_logs": true,
