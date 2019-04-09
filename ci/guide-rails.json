@@ -30,6 +30,12 @@
 				"segment_type": "build",
 				"job_steps": [
 					{
+						"name": "list",
+						"definition": "list",
+						"command": "pwd\nls -a",
+						"properties": null
+					},
+					{
 						"name": "run tests",
 						"definition": "run tests",
 						"command": "ant test",
