@@ -38,7 +38,7 @@
 					{
 						"name": "run tests",
 						"definition": "run tests",
-						"command": "ant test",
+						"command": "cd sample\nant test",
 						"properties": null
 					}
 				],
