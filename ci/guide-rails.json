@@ -36,6 +36,12 @@
 						"properties": null
 					},
 					{
+						"name": "cat file",
+						"definition": "cat file",
+						"command": "cd sample\ncat build.properties",
+						"properties": null
+					},
+					{
 						"name": "run tests",
 						"definition": "run tests",
 						"command": "cd sample\nant test",
