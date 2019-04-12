@@ -114,7 +114,17 @@
 						"dependencies": [],
 						"downloads": [],
 						"files": [
-							"((application.name))*"
+							"mypkg/*"
+						],
+						"package_install_command": "",
+						"installed_path": ""
+					},
+					{
+						"name": "code",
+						"dependencies": [],
+						"downloads": [],
+						"files": [
+							"codepkg/*"
 						],
 						"package_install_command": "",
 						"installed_path": ""
