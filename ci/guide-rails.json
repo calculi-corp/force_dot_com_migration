@@ -114,17 +114,7 @@
 						"dependencies": [],
 						"downloads": [],
 						"files": [
-							"mypkg/*"
-						],
-						"package_install_command": "",
-						"installed_path": ""
-					},
-					{
-						"name": "code",
-						"dependencies": [],
-						"downloads": [],
-						"files": [
-							"codepkg/*"
+							"force_dot_com_migration/*"
 						],
 						"package_install_command": "",
 						"installed_path": ""
