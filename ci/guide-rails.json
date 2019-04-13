@@ -110,7 +110,7 @@
 				},
 				"packages": [
 					{
-						"name": "((application.name))",
+						"name": "force_dot_com_migration",
 						"dependencies": [],
 						"downloads": [],
 						"files": [
