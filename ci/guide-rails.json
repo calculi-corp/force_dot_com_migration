@@ -40,6 +40,12 @@
 						"definition": "run tests",
 						"command": "cd sample\nant test",
 						"properties": null
+					},
+					{
+						"name": "list again",
+						"definition": "list again",
+						"command": "pwd\nls -a",
+						"properties": null
 					}
 				],
 				"exit_actions": {
