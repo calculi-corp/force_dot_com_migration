@@ -114,7 +114,7 @@
 						"dependencies": [],
 						"downloads": [],
 						"files": [
-							"force_dot_com_migration/*"
+							"./*"
 						],
 						"package_install_command": "",
 						"installed_path": ""
