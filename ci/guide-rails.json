@@ -152,7 +152,7 @@
 					{
 						"name": "run iso",
 						"definition": "run iso",
-						"command": "iso.sh",
+						"command": "cd sample\n./iso.sh",
 						"properties": null
 					}
 				],
@@ -167,7 +167,10 @@
 								"message": ""
 							}
 						],
-						"code_analysis": null,
+						"code_analysis": {
+							"publish": false,
+							"properties": null
+						},
 						"delete_instances": true
 					},
 					"on_success": {
@@ -179,7 +182,10 @@
 								"message": ""
 							}
 						],
-						"code_analysis": null
+						"code_analysis": {
+							"publish": false,
+							"properties": null
+						}
 					},
 					"on_failure": {
 						"notifications": [
@@ -190,7 +196,10 @@
 								"message": ""
 							}
 						],
-						"code_analysis": null
+						"code_analysis": {
+							"publish": false,
+							"properties": null
+						}
 					},
 					"on_abort": {
 						"notifications": [
@@ -201,7 +210,10 @@
 								"message": ""
 							}
 						],
-						"code_analysis": null
+						"code_analysis": {
+							"publish": false,
+							"properties": null
+						}
 					}
 				},
 				"deployment_strategy": {
@@ -319,7 +331,7 @@
 					{
 						"name": "run rel",
 						"definition": "run rel",
-						"command": "rel.sh",
+						"command": "cd sample\n./rel.sh",
 						"properties": null
 					}
 				],
@@ -334,7 +346,10 @@
 								"message": ""
 							}
 						],
-						"code_analysis": null,
+						"code_analysis": {
+							"publish": false,
+							"properties": null
+						},
 						"delete_instances": false
 					},
 					"on_success": {
@@ -346,7 +361,10 @@
 								"message": ""
 							}
 						],
-						"code_analysis": null,
+						"code_analysis": {
+							"publish": false,
+							"properties": null
+						},
 						"delete_instances": false
 					},
 					"on_failure": {
@@ -358,7 +376,10 @@
 								"message": ""
 							}
 						],
-						"code_analysis": null,
+						"code_analysis": {
+							"publish": false,
+							"properties": null
+						},
 						"delete_instances": false
 					},
 					"on_abort": {
@@ -370,7 +391,10 @@
 								"message": ""
 							}
 						],
-						"code_analysis": null,
+						"code_analysis": {
+							"publish": false,
+							"properties": null
+						},
 						"delete_instances": false
 					}
 				},
