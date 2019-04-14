@@ -411,7 +411,7 @@
 				},
 				"process": {
 					"init": {
-						"command": ""
+						"command": "bin/start-service.sh"
 					}
 				},
 				"instance_tags": [
