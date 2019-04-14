@@ -152,7 +152,7 @@
 					{
 						"name": "run iso",
 						"definition": "run iso",
-						"command": "cd sample\n./iso.sh",
+						"command": "cd sample\n../ci/bin/iso.sh",
 						"properties": null
 					}
 				],
@@ -331,7 +331,7 @@
 					{
 						"name": "run rel",
 						"definition": "run rel",
-						"command": "cd sample\n./rel.sh",
+						"command": "cd sample\n../ci/bin/rel.sh",
 						"properties": null
 					}
 				],
@@ -556,7 +556,12 @@
 			}
 		},
 		"default_properties": null,
-		"deployment_files": [],
+		"deployment_files": [
+			{
+				"source_path": "ci/bin/start-service.sh",
+				"target_path": "bin/start-service.sh"
+			}
+		],
 		"application_init": {
 			"command": "",
 			"arguments": null
