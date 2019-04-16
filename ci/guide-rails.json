@@ -158,7 +158,7 @@
 					{
 						"name": "run iso",
 						"definition": "run iso",
-						"command": "chmod u+x -r ${APPLICATION_JOB_DIR}/bin\n${APPLICATION_JOB_DIR}/bin/iso.sh",
+						"command": "chmod -R u+x ${APPLICATION_JOB_DIR}/bin\n${APPLICATION_JOB_DIR}/bin/iso.sh",
 						"properties": null
 					}
 				],
@@ -307,8 +307,8 @@
 									}
 								],
 								"deployment_strategy": {
-									"canary_watch_time": "2000-60000",
-									"update_watch_time": "2000-60000",
+									"canary_watch_time": "",
+									"update_watch_time": "",
 									"serial": false
 								}
 							}
