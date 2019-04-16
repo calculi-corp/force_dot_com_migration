@@ -145,6 +145,7 @@
 			{
 				"name": "Isolation",
 				"segment_type": "isolation",
+				"persistent": true,
 				"run_after": [
 					"Build"
 				],
@@ -255,10 +256,10 @@
 						"vm_type": "default",
 						"os_type": "default",
 						"networks": [
-							"((deploy.target.network.isolation))"
+							"((deploy.target.network.production))"
 						],
 						"availability_zones": [
-							"((deploy.target.zone.isolation))"
+							"((deploy.target.zone.production))"
 						],
 						"dependencies": [
 							{
@@ -307,8 +308,8 @@
 									}
 								],
 								"deployment_strategy": {
-									"canary_watch_time": "",
-									"update_watch_time": "",
+									"canary_watch_time": "2000-60000",
+									"update_watch_time": "2000-60000",
 									"serial": false
 								}
 							}
