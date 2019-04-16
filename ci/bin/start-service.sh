@@ -1,6 +1,6 @@
-#! /usr/bin/bash
+#!/bin/bash
 
-Echo "checking for ant version"
+echo "checking for ant version"
 while true
 do
 	ant --help
