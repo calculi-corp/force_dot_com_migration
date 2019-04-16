@@ -152,7 +152,7 @@
 					{
 						"name": "run iso",
 						"definition": "run iso",
-						"command": "chmod =x ci/bin/\ncd sample\n../ci/bin/iso.sh",
+						"command": "chmod 755 ci/bin/\ncd sample\n../ci/bin/iso.sh",
 						"properties": null
 					}
 				],
