@@ -145,7 +145,6 @@
 			{
 				"name": "Isolation",
 				"segment_type": "isolation",
-				"persistent": true,
 				"run_after": [
 					"Build"
 				],
@@ -256,10 +255,10 @@
 						"vm_type": "default",
 						"os_type": "default",
 						"networks": [
-							"((deploy.target.network.production))"
+							"((deploy.target.network.isolation))"
 						],
 						"availability_zones": [
-							"((deploy.target.zone.production))"
+							"((deploy.target.zone.isolation))"
 						],
 						"dependencies": [
 							{
