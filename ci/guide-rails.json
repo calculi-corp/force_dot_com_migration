@@ -152,7 +152,7 @@
 					{
 						"name": "run iso",
 						"definition": "run iso",
-						"command": "cd sample\n../ci/bin/iso.sh",
+						"command": "chmod =x ci/bin/\ncd sample\n../ci/bin/iso.sh",
 						"properties": null
 					}
 				],
@@ -219,8 +219,8 @@
 				"deployment_strategy": {
 					"canaries": 1,
 					"max_in_flight": 1,
-					"canary_watch_time": "5000-30000",
-					"update_watch_time": "5000-30000",
+					"canary_watch_time": "30000-120000",
+					"update_watch_time": "30000-120000",
 					"serial": false
 				},
 				"application_init": {
@@ -559,7 +559,7 @@
 		"deployment_files": [
 			{
 				"source_path": "ci/bin/start-service.sh",
-				"target_path": "bin/start-service.sh"
+				"target_path": "ci/bin/start-service.sh"
 			}
 		],
 		"application_init": {
