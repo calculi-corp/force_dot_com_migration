@@ -238,6 +238,9 @@
 						"command": ""
 					}
 				},
+				"package_dependencies": [
+					"force_dot_com_migration"
+				],
 				"instance_tags": [
 					{
 						"name": "application.name",
@@ -420,6 +423,9 @@
 						"command": "ci/bin/start-service.sh"
 					}
 				},
+				"package_dependencies": [
+					"force_dot_com_migration"
+				],
 				"instance_tags": [
 					{
 						"name": "application.name",
