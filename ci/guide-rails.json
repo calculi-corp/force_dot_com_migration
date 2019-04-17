@@ -186,7 +186,7 @@
 					{
 						"name": "run iso",
 						"definition": "run iso",
-						"command": "chmod u+x ${PKG_BASE_DIR}/bin/start-service.sh\n${APPLICATION_JOB_DIR}/bin/iso.sh",
+						"command": "chmod u+x bin/start-service.sh\nchmod u+x bin/iso.sh\n${APPLICATION_JOB_DIR}/bin/iso.sh",
 						"properties": null
 					}
 				],
@@ -608,6 +608,10 @@
 			{
 				"source_path": "ci/bin/start-service.sh",
 				"target_path": "bin/start-service.sh"
+			},
+			{
+				"source_path": "ci/bin/iso.sh",
+				"target_path": "bin/iso.sh"
 			}
 		],
 		"application_init": {
