@@ -118,6 +118,19 @@
 						],
 						"package_install_command": "",
 						"installed_path": ""
+					},
+					{
+						"name": "ant",
+						"dependencies": [],
+						"downloads": [
+							{
+								"link": "http://mirror.metrocast.net/apache//ant/binaries/apache-ant-((ant.version))-bin.tar.gz",
+								"name": "apache-ant-((ant.version))-bin.tar.gz"
+							}
+						],
+						"files": [],
+						"package_install_command": "tar xvf ant/apache-ant-((ant.version))-bin.tar.gz -C ${BOSH_INSTALL_TARGET}/",
+						"installed_path": ""
 					}
 				],
 				"instance_tags": [
@@ -239,7 +252,8 @@
 					}
 				},
 				"package_dependencies": [
-					"force_dot_com_migration"
+					"force_dot_com_migration",
+					"ant"
 				],
 				"instance_tags": [
 					{
