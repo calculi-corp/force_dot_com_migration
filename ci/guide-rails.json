@@ -158,7 +158,7 @@
 					{
 						"name": "run iso",
 						"definition": "run iso",
-						"command": "chmod -R u+x ${APPLICATION_JOB_DIR}/bin\n${APPLICATION_JOB_DIR}/bin/iso.sh",
+						"command": "chmod u+x ${PKG_BASE_DIR}/bin/start-service.sh\n${APPLICATION_JOB_DIR}/bin/iso.sh",
 						"properties": null
 					}
 				],
