@@ -266,7 +266,8 @@
 				},
 				"package_dependencies": [
 					"force_dot_com_migration",
-					"ant"
+					"ant",
+					"jdk"
 				],
 				"instance_tags": [
 					{
