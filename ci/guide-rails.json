@@ -186,7 +186,7 @@
 					{
 						"name": "run iso",
 						"definition": "run iso",
-						"command": "chmod u+x bin/start-service.sh\nchmod u+x bin/iso.sh\n${APPLICATION_JOB_DIR}/bin/iso.sh",
+						"command": "chmod u+x bin/iso.sh\nbin/iso.sh",
 						"properties": null
 					}
 				],
