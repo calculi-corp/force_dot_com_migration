@@ -131,6 +131,19 @@
 						"files": [],
 						"package_install_command": "tar xvf ant/apache-ant-((ant.version))-bin.tar.gz -C ${BOSH_INSTALL_TARGET}/",
 						"installed_path": ""
+					},
+					{
+						"name": "jdk",
+						"dependencies": [],
+						"downloads": [
+							{
+								"link": "https://s3.amazonaws.com/calculi-middleware/jdk-12_linux-x64_bin.tar.gz",
+								"name": "jdk-12_linux-x64_bin.tar.gz"
+							}
+						],
+						"files": [],
+						"package_install_command": "tar xzf jdk/jdk-12_linux-x64_bin.tar.gz\n cp -Rf * ${BOSH_INSTALL_TARGET}/",
+						"installed_path": ""
 					}
 				],
 				"instance_tags": [
