@@ -121,7 +121,9 @@
 					},
 					{
 						"name": "ant",
-						"dependencies": [],
+						"dependencies": [
+							"jdk"
+						],
 						"downloads": [
 							{
 								"link": "http://mirror.metrocast.net/apache//ant/binaries/apache-ant-((ant.version))-bin.tar.gz",
