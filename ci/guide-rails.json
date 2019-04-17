@@ -581,7 +581,13 @@
 				"code_analysis": null
 			}
 		},
-		"default_properties": null,
+		"default_properties": [
+			{
+				"name": "ant.version",
+				"value": "1.9.14",
+				"type": "string"
+			}
+		],
 		"deployment_files": [
 			{
 				"source_path": "ci/bin/start-service.sh",
