@@ -370,7 +370,7 @@
 					{
 						"name": "run rel",
 						"definition": "run rel",
-						"command": "cd sample\n../ci/bin/rel.sh",
+						"command": "chmod u+x bin/rel.sh\nbin/rel.sh",
 						"properties": null
 					}
 				],
@@ -450,11 +450,13 @@
 				},
 				"process": {
 					"init": {
-						"command": "ci/bin/start-service.sh"
+						"command": ""
 					}
 				},
 				"package_dependencies": [
-					"force_dot_com_migration"
+					"force_dot_com_migration",
+					"ant",
+					"jdk"
 				],
 				"instance_tags": [
 					{
