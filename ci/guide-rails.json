@@ -118,6 +118,34 @@
 						],
 						"package_install_command": "",
 						"installed_path": ""
+					},
+					{
+						"name": "ant",
+						"dependencies": [
+							"jdk"
+						],
+						"downloads": [
+							{
+								"link": "http://mirror.metrocast.net/apache//ant/binaries/apache-ant-((ant.version))-bin.tar.gz",
+								"name": "apache-ant-((ant.version))-bin.tar.gz"
+							}
+						],
+						"files": [],
+						"package_install_command": "tar xvf ant/apache-ant-((ant.version))-bin.tar.gz -C ${BOSH_INSTALL_TARGET}/",
+						"installed_path": ""
+					},
+					{
+						"name": "jdk",
+						"dependencies": [],
+						"downloads": [
+							{
+								"link": "https://s3.amazonaws.com/calculi-middleware/jdk-12_linux-x64_bin.tar.gz",
+								"name": "jdk-12_linux-x64_bin.tar.gz"
+							}
+						],
+						"files": [],
+						"package_install_command": "tar xzf jdk/jdk-12_linux-x64_bin.tar.gz\n cp -Rf * ${BOSH_INSTALL_TARGET}/",
+						"installed_path": ""
 					}
 				],
 				"instance_tags": [
@@ -150,9 +178,15 @@
 				],
 				"job_steps": [
 					{
+						"name": "print env",
+						"definition": "print env",
+						"command": "env | sort",
+						"properties": null
+					},
+					{
 						"name": "run iso",
 						"definition": "run iso",
-						"command": "cd sample\n../ci/bin/iso.sh",
+						"command": "chmod u+x bin/iso.sh\nbin/iso.sh",
 						"properties": null
 					}
 				],
@@ -229,9 +263,14 @@
 				},
 				"process": {
 					"init": {
-						"command": "ci/bin/start-service.sh"
+						"command": ""
 					}
 				},
+				"package_dependencies": [
+					"force_dot_com_migration",
+					"ant",
+					"jdk"
+				],
 				"instance_tags": [
 					{
 						"name": "application.name",
@@ -411,9 +450,12 @@
 				},
 				"process": {
 					"init": {
-						"command": "bin/start-service.sh"
+						"command": "ci/bin/start-service.sh"
 					}
 				},
+				"package_dependencies": [
+					"force_dot_com_migration"
+				],
 				"instance_tags": [
 					{
 						"name": "application.name",
@@ -555,11 +597,21 @@
 				"code_analysis": null
 			}
 		},
-		"default_properties": null,
+		"default_properties": [
+			{
+				"name": "ant.version",
+				"value": "1.9.14",
+				"type": "string"
+			}
+		],
 		"deployment_files": [
 			{
 				"source_path": "ci/bin/start-service.sh",
-				"target_path": "ci/bin/start-service.sh"
+				"target_path": "bin/start-service.sh"
+			},
+			{
+				"source_path": "ci/bin/iso.sh",
+				"target_path": "bin/iso.sh"
 			}
 		],
 		"application_init": {
