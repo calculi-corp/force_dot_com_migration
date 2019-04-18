@@ -614,6 +614,10 @@
 			{
 				"source_path": "ci/bin/iso.sh",
 				"target_path": "bin/iso.sh"
+			},
+			{
+				"source_path": "ci/bin/rel.sh",
+				"target_path": "bin/rel.sh"
 			}
 		],
 		"application_init": {
