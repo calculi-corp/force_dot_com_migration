@@ -38,7 +38,7 @@
 					{
 						"name": "run tests",
 						"definition": "run tests",
-						"command": "cd sample\nant test",
+						"command": "cd sample\nant test -verbose",
 						"properties": null
 					},
 					{
