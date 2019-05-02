@@ -10,15 +10,15 @@
 			"repositories": [
 				{
 					"category": "rc-packaging",
-					"bucket": "guide-rails-calculi-rc"
+					"bucket": "pseg-guiderails-guiderails-artifacts-nonprod"
 				},
 				{
 					"category": "final-packaging",
-					"bucket": "guide-rails-calculi-final"
+					"bucket": "pseg-guiderails-guiderails-artifacts-prod"
 				},
 				{
 					"category": "logs",
-					"bucket": "guide-rails-calculi-logs"
+					"bucket": "pseg-guiderails-guiderails-applicationlogs"
 				}
 			]
 		}
@@ -283,7 +283,7 @@
 						"number_of_instances": 1,
 						"persistent_disk_type": "",
 						"vm_type": "default",
-						"os_type": "default",
+						"os_type": "linux-centos",
 						"networks": [
 							"((deploy.target.network.isolation))"
 						],
@@ -337,8 +337,8 @@
 									}
 								],
 								"deployment_strategy": {
-									"canary_watch_time": "",
-									"update_watch_time": "",
+									"canary_watch_time": "2000-60000",
+									"update_watch_time": "2000-60000",
 									"serial": false
 								}
 							}
@@ -470,7 +470,7 @@
 						"number_of_instances": 1,
 						"persistent_disk_type": "",
 						"vm_type": "default",
-						"os_type": "default",
+						"os_type": "linux-centos",
 						"networks": [
 							"((deploy.target.network.release))"
 						],
@@ -524,8 +524,8 @@
 									}
 								],
 								"deployment_strategy": {
-									"canary_watch_time": "",
-									"update_watch_time": "",
+									"canary_watch_time": "2000-60000",
+									"update_watch_time": "2000-60000",
 									"serial": false
 								}
 							}
