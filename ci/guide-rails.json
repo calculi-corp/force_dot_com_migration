@@ -10,15 +10,15 @@
 			"repositories": [
 				{
 					"category": "rc-packaging",
-					"bucket": "guide-rails-calculi-rc"
+					"bucket": "pseg-guiderails-guiderails-artifacts-nonprod"
 				},
 				{
 					"category": "final-packaging",
-					"bucket": "guide-rails-calculi-final"
+					"bucket": "pseg-guiderails-guiderails-artifacts-prod"
 				},
 				{
 					"category": "logs",
-					"bucket": "guide-rails-calculi-logs"
+					"bucket": "pseg-guiderails-guiderails-applicationlogs"
 				}
 			]
 		}
