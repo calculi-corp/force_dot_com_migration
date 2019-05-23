@@ -40,12 +40,6 @@
 						"definition": "run tests",
 						"command": "cd sample\nant test -Dsf.username=$SF_USERNAME -Dsf.password=$SF_PASSWORD",
 						"properties": null
-					},
-					{
-						"name": "list again",
-						"definition": "list again",
-						"command": "pwd\nls -a",
-						"properties": null
 					}
 				],
 				"exit_actions": {
@@ -296,6 +290,7 @@
 						"availability_zones": [
 							"((deploy.target.zone.isolation))"
 						],
+						"deployment_strategy": {},
 						"dependencies": [
 							{
 								"name": "consul",
@@ -341,12 +336,7 @@
 										"name": "calculi.intermediate.key",
 										"value": "grsecret:tls.key"
 									}
-								],
-								"deployment_strategy": {
-									"canary_watch_time": "2000-60000",
-									"update_watch_time": "2000-60000",
-									"serial": false
-								}
+								]
 							}
 						]
 					}
@@ -489,6 +479,7 @@
 						"availability_zones": [
 							"((deploy.target.zone.release))"
 						],
+						"deployment_strategy": {},
 						"dependencies": [
 							{
 								"name": "consul",
@@ -534,12 +525,7 @@
 										"name": "calculi.intermediate.key",
 										"value": "grsecret:tls.key"
 									}
-								],
-								"deployment_strategy": {
-									"canary_watch_time": "2000-60000",
-									"update_watch_time": "2000-60000",
-									"serial": false
-								}
+								]
 							}
 						]
 					}
