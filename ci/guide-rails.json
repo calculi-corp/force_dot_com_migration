@@ -602,12 +602,6 @@
 				"name": "ant.version",
 				"value": "1.9.14",
 				"type": "string"
-			},
-			{
-				"name": "sf.password",
-				"value": "8mzxUeH1SFp3L1r0VysUi7yF4NeakarAQkr",
-				"protected": true,
-				"type": "string"
 			}
 		],
 		"deployment_files": [
