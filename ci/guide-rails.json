@@ -38,7 +38,7 @@
 					{
 						"name": "run tests",
 						"definition": "run tests",
-						"command": "cd sample\nant test -Dsf.username=$SF_USERNAME -Dsf.password=$SF_PASSWORD -Dsf.serverurl=https://p-s-e-g--petro.lightning.force.com",
+						"command": "cd sample\nant test -Dsf.username=$SF_USERNAME -Dsf.password=$SF_PASSWORD -Dsf.serverurl=https://p-s-e-g--petro.lightning.force.com -verbose",
 						"properties": null
 					}
 				],
