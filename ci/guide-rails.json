@@ -36,12 +36,6 @@
 						"properties": null
 					},
 					{
-						"name": "",
-						"definition": "",
-						"command": "echo $SF_USERNAME\necho $SF_PASSWORD",
-						"properties": null
-					},
-					{
 						"name": "run tests",
 						"definition": "run tests",
 						"command": "cd sample\nant test -Dsf.username=$SF_USERNAME -Dsf.password=$SF_PASSWORD -Dsf.serverurl=https://test.salesforce.com -verbose",
