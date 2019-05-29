@@ -38,13 +38,7 @@
 					{
 						"name": "run tests",
 						"definition": "run tests",
-						"command": "cd sample\nant test -Dsf.username=$SF_USERNAME -Dsf.password=$SF_PASSWORD -Dsf.serverurl=https://test.salesforce.com -verbose",
-						"properties": null
-					},
-					{
-						"name": "list",
-						"definition": "list",
-						"command": "cd sample\nls -lR",
+						"command": "cd sample\nant test -Dsf.username=$SF_USERNAME -Dsf.password=$SF_PASSWORD -Dsf.serverurl=https://test.salesforce.com -verbose\nls -lR",
 						"properties": null
 					}
 				],
