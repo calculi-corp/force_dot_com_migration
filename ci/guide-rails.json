@@ -180,7 +180,7 @@
 					{
 						"name": "run iso",
 						"definition": "run iso",
-						"command": "# curl -v https://test.salesforce.com/services/Soap/u/45.0\ncurl -v https://www.google.com\nchmod u+x bin/iso.sh\nbin/iso.sh",
+						"command": "echo curl -v https://test.salesforce.com/services/Soap/u/45.0\ncurl -v https://www.google.com\nchmod u+x bin/iso.sh\nbin/iso.sh",
 						"properties": null
 					}
 				],
