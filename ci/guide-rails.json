@@ -290,10 +290,10 @@
 						"vm_type": "default",
 						"os_type": "linux-centos",
 						"networks": [
-							"((deploy.target.network.isolation))"
+							"((deploy.target.network.management))"
 						],
 						"availability_zones": [
-							"((deploy.target.zone.isolation))"
+							"((deploy.target.zone.management))"
 						],
 						"deployment_strategy": {},
 						"dependencies": [
