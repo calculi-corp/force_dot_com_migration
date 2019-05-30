@@ -5,4 +5,4 @@ export PATH=$PATH:$JAVA_HOME/bin
 
 pushd ${PKG_BASE_DIR}/force_dot_com_migration/sample
 cp build.properties.iso build.properties
-ant test -Dsf.username=$ISO_SF_USERNAME -Dsf.password=$ISO_SF_PASSWORD
+ant test -Dsf.username=$SF_ISO_USERNAME -Dsf.password=$SF_ISO_PASSWORD
