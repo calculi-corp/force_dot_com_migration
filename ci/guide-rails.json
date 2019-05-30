@@ -247,11 +247,11 @@
 				"properties": [
 					{
 						"name": "sf.iso.password",
-						"value": "((sf.password))"
+						"value": "((iso.sf.password))"
 					},
 					{
 						"name": "sf.iso.username",
-						"value": "((sf.username))"
+						"value": "((iso.sf.username))"
 					}
 				],
 				"deployment_strategy": {
