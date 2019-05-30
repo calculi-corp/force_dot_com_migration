@@ -248,6 +248,10 @@
 					{
 						"name": "iso.sf.password",
 						"value": "((sf.password))"
+					},
+					{
+						"name": "iso.sf.username",
+						"value": "((sf.username))"
 					}
 				],
 				"deployment_strategy": {
