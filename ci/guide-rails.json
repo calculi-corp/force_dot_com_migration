@@ -246,11 +246,11 @@
 				},
 				"properties": [
 					{
-						"name": "iso.sf.password",
+						"name": "sf.iso.password",
 						"value": "((sf.password))"
 					},
 					{
-						"name": "iso.sf.username",
+						"name": "sf.iso.username",
 						"value": "((sf.username))"
 					}
 				],
@@ -610,6 +610,11 @@
 			{
 				"name": "sf.password",
 				"value": "8mzxUeH10!9ukCdNMhWdJrOugvtDdSrFZW",
+				"type": "string"
+			},
+			{
+				"name": "sf.iso.username",
+				"value": "petro.berehovskyi@pseg.com.test",
 				"type": "string"
 			}
 		],
