@@ -612,11 +612,6 @@
 				"name": "sf.password",
 				"value": "8mzxUeH10!9ukCdNMhWdJrOugvtDdSrFZW",
 				"type": "string"
-			},
-			{
-				"name": "sf.iso.username",
-				"value": "petro.berehovskyi@pseg.com.test",
-				"type": "string"
 			}
 		],
 		"deployment_files": [
