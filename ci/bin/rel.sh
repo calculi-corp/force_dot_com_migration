@@ -5,4 +5,4 @@ export PATH=$PATH:$JAVA_HOME/bin
 
 pushd ${PKG_BASE_DIR}/force_dot_com_migration/sample
 cp build.properties.rel build.properties
-ant test -Dsf.username=$REL_SF_USERNAME -Dsf.password=$REL_SF_PASSWORD
+ant test -Dsf.username=$SF_REL_USERNAME -Dsf.password=$SF_REL_PASSWORD
