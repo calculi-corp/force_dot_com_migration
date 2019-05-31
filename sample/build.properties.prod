@@ -10,8 +10,8 @@
 #sf.metadataType = <Insert metadata type name for which listMetadata or bulkRetrieve operations are to be performed>
 
 # Use 'https://login.salesforce.com' for production or developer edition (the default if not specified).
-98736# Use 'https://test.salesforce.com for sandbox.
-#sf.serverurl = https://test.salesforce.com
+# Use 'https://test.salesforce.com for sandbox.
+sf.serverurl = https://test.salesforce.com
 sf.serverurl = https://login.salesforce.com
 
 sf.maxPoll = 20
