@@ -365,7 +365,7 @@
 				"name": "Release",
 				"segment_type": "release",
 				"run_after": [
-					"Isolation"
+					"Build"
 				],
 				"job_steps": [
 					{
@@ -483,10 +483,156 @@
 						"vm_type": "default",
 						"os_type": "linux-centos",
 						"networks": [
-							"((deploy.target.network.release))"
+							"((deploy.target.network.management))"
 						],
 						"availability_zones": [
-							"((deploy.target.zone.release))"
+							"((deploy.target.zone.management))"
+						],
+						"deployment_strategy": {},
+						"dependencies": [
+							{
+								"name": "consul",
+								"release": "consul",
+								"provides": [
+									{
+										"name": "consul_servers.as",
+										"value": "consul_1"
+									}
+								],
+								"consumes": [
+									{
+										"name": "consul_servers.from",
+										"value": "consul_1"
+									}
+								],
+								"properties": [
+									{
+										"name": "consul.servicename",
+										"value": "((consul.servicename))"
+									},
+									{
+										"name": "consul.environment",
+										"value": "((consul.environment))"
+									},
+									{
+										"name": "consul.datacenter",
+										"value": "((consul.datacenter))"
+									},
+									{
+										"name": "consul.server",
+										"value": "false"
+									},
+									{
+										"name": "consul.joinservers",
+										"value": "((consul.joinservers))"
+									},
+									{
+										"name": "calculi.intermediate.cert",
+										"value": "grsecret:tls.cert"
+									},
+									{
+										"name": "calculi.intermediate.key",
+										"value": "grsecret:tls.key"
+									}
+								]
+							}
+						]
+					}
+				],
+				"post_deployment_actions": {
+					"instances": null,
+					"loadbalanced": false,
+					"loadbalancer": {
+						"TargetGroupName": "",
+						"TargetGroupPort": 0,
+						"TargetGroupProtocol": "",
+						"TargetType": "",
+						"VPCID": "",
+						"HealthCheckEnabled": false,
+						"HealthCheckPort": "",
+						"UnhealthyThresholdCount": 0
+					}
+				}
+			},
+			{
+				"name": "Production",
+				"segment_type": "production",
+				"persistent": true,
+				"run_after": [
+					"Release",
+					"Isolation"
+				],
+				"job_steps": [
+					{
+						"name": "run prod",
+						"definition": "run prod",
+						"command": "echo curl -v https://test.salesforce.com/services/Soap/u/45.0\ncurl -v https://www.google.com\nchmod u+x bin/prod.sh\nbin/prod.sh",
+						"properties": null
+					}
+				],
+				"exit_actions": {
+					"default": {
+						"fetch_logs": true,
+						"code_analysis": null,
+						"delete_instances": false
+					},
+					"on_success": {
+						"code_analysis": null,
+						"delete_instances": false
+					},
+					"on_failure": {
+						"code_analysis": null,
+						"delete_instances": false
+					},
+					"on_abort": {
+						"code_analysis": null,
+						"delete_instances": false
+					}
+				},
+				"properties": [
+					{
+						"name": "sf.prod.password",
+						"value": "((iso.sf.password))"
+					},
+					{
+						"name": "sf.prod.username",
+						"value": "((iso.sf.username))"
+					}
+				],
+				"deployment_strategy": {
+					"canaries": 1,
+					"max_in_flight": 1,
+					"canary_watch_time": "5000-30000",
+					"update_watch_time": "5000-30000",
+					"serial": false
+				},
+				"application_init": {
+					"command": "",
+					"arguments": null
+				},
+				"process": {
+					"init": {
+						"command": ""
+					}
+				},
+				"instance_tags": [
+					{
+						"name": "application.name",
+						"value": "((application.name))"
+					}
+				],
+				"instance_groups": [
+					{
+						"name": "((application.name))",
+						"number_of_instances": 1,
+						"persistent_disk_type": "",
+						"vm_type": "default",
+						"os_type": "linux-centos",
+						"networks": [
+							"((deploy.target.network.production))"
+						],
+						"availability_zones": [
+							"((deploy.target.zone.production))"
 						],
 						"deployment_strategy": {},
 						"dependencies": [
