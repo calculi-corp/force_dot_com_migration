@@ -440,8 +440,12 @@
 				},
 				"properties": [
 					{
-						"name": "rel.sf.password",
-						"value": "((sf.password))"
+						"name": "sf.rel.password",
+						"value": "((iso.sf.password))"
+					},
+					{
+						"name": "sf.rel.username",
+						"value": "((iso.sf.username))"
 					}
 				],
 				"deployment_strategy": {
