@@ -371,7 +371,7 @@
 					{
 						"name": "run rel",
 						"definition": "run rel",
-						"command": "chmod u+x bin/rel.sh\nbin/rel.sh",
+						"command": "curl -v https://www.google.com\nchmod u+x bin/rel.sh\nbin/rel.sh",
 						"properties": null
 					}
 				],
