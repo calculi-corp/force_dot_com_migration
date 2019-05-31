@@ -14,7 +14,7 @@
 sf.serverurl = https://test.salesforce.com
 #sf.serverurl = https://login.salesforce.com
 
-sf.maxPoll = 20
+sf.maxPoll = 50
 # If your network requires an HTTP proxy, see http://ant.apache.org/manual/proxy.html for configuration.
 #
 
