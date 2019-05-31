@@ -640,10 +640,10 @@
 						"vm_type": "default",
 						"os_type": "linux-centos",
 						"networks": [
-							"((deploy.target.network.production))"
+							"((deploy.target.network.management))"
 						],
 						"availability_zones": [
-							"((deploy.target.zone.production))"
+							"((deploy.target.zone.management))"
 						],
 						"deployment_strategy": {},
 						"dependencies": [
