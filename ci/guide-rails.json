@@ -289,10 +289,10 @@
 						"vm_type": "default",
 						"os_type": "linux-centos",
 						"networks": [
-							"((deploy.target.network.management))"
+							"((deploy.target.network.isolation))"
 						],
 						"availability_zones": [
-							"((deploy.target.zone.management))"
+							"((deploy.target.zone.isolation))"
 						],
 						"deployment_strategy": {},
 						"dependencies": [
@@ -482,10 +482,10 @@
 						"vm_type": "default",
 						"os_type": "linux-centos",
 						"networks": [
-							"((deploy.target.network.management))"
+							"((deploy.target.network.release))"
 						],
 						"availability_zones": [
-							"((deploy.target.zone.management))"
+							"((deploy.target.zone.release))"
 						],
 						"deployment_strategy": {},
 						"dependencies": [
@@ -639,10 +639,10 @@
 						"vm_type": "default",
 						"os_type": "linux-centos",
 						"networks": [
-							"((deploy.target.network.management))"
+							"((deploy.target.network.production))"
 						],
 						"availability_zones": [
-							"((deploy.target.zone.management))"
+							"((deploy.target.zone.production))"
 						],
 						"deployment_strategy": {},
 						"dependencies": [
