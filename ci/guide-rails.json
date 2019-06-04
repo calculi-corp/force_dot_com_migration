@@ -32,7 +32,7 @@
 					{
 						"name": "list",
 						"definition": "list",
-						"command": "pwd\nls -a",
+						"command": "pwd\nls -lR",
 						"properties": null
 					},
 					{
