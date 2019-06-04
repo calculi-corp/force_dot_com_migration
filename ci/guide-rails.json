@@ -180,7 +180,7 @@
 					{
 						"name": "run iso",
 						"definition": "run iso",
-						"command": "echo curl -v https://test.salesforce.com/services/Soap/u/45.0\ncurl -v https://www.google.com\nchmod u+x bin/iso.sh\nbin/iso.sh",
+						"command": "echo curl -v https://test.salesforce.com/services/Soap/u/45.0\ncurl -v https://www.google.com\nls -lR\nchmod u+x bin/iso.sh\nbin/iso.sh",
 						"properties": null
 					}
 				],
@@ -370,7 +370,7 @@
 					{
 						"name": "run rel",
 						"definition": "run rel",
-						"command": "curl -v https://www.google.com\nchmod u+x bin/rel.sh\nbin/rel.sh",
+						"command": "curl -v https://www.google.com\nls -lR\nchmod u+x bin/rel.sh\nbin/rel.sh",
 						"properties": null
 					}
 				],
