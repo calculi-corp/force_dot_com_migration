@@ -791,6 +791,10 @@
 			{
 				"source_path": "ci/bin/rel.sh",
 				"target_path": "bin/rel.sh"
+			},
+			{
+				"source_path": "ci/bin/prod.sh",
+				"target_path": "bin/prod.sh"
 			}
 		],
 		"application_init": {
