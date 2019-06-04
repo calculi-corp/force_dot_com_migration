@@ -564,7 +564,7 @@
 					{
 						"name": "run prod",
 						"definition": "run prod",
-						"command": "echo curl -v https://test.salesforce.com/services/Soap/u/45.0\ncurl -v https://www.google.com\nls -lR\nchmod u+x bin/prod.sh\nbin/prod.sh",
+						"command": "ls -lR\nchmod u+x bin/prod.sh\nbin/prod.sh",
 						"properties": null
 					}
 				],
@@ -625,6 +625,11 @@
 						"command": ""
 					}
 				},
+				"package_dependencies": [
+					"force_dot_com_migration",
+					"ant",
+					"jdk"
+				],
 				"instance_tags": [
 					{
 						"name": "application.name",
